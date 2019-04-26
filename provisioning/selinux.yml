@@ -11,4 +11,4 @@
 - name: Remove temporary files
   file: 
     path: /tmp/mysqld.*
-state: absent
+    state: absent

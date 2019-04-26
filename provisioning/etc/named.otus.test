@@ -12,4 +12,4 @@ $ORIGIN otus.test.
 ns              IN      A       192.168.50.100
 ; Hosts
 master          IN      A       192.168.50.100
-slave IN A 192.168.50.101
+slave           IN      A       192.168.50.101

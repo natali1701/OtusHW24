@@ -71,19 +71,19 @@
       state: restarted
       enabled: yes
   - name: create repl user
-    command: mysql -u root -pPool-swimming3 -e "CREATE USER 'repl'@'%' IDENTIFIED BY 'Pool-swimming3';"
+    command: mysql -u root -pNaum-natali7 -e "CREATE USER 'repl'@'%' IDENTIFIED WITH sha256_password BY 'Naum-natali7';"
   - name: grant repl user
-    command: mysql -u root -pPool-swimming3 -e "GRANT REPLICATION SLAVE ON *.* TO 'repl'@'%';"
+    command: mysql -u root -pNaum-natali7 -e "GRANT REPLICATION SLAVE ON *.* TO 'repl'@'%';"
   - name: create db
-    command: mysql -u root -pPool-swimming3 -e "CREATE DATABASE bet;"
+    command: mysql -u root -pNaum-natali7 -e "CREATE DATABASE bet;"
   - name: copy dump
     copy:
       src: dump/db.sql
       dest: /tmp/db.sql
   - name: load db dump
-    command: mysql -u root -pPool-swimming3 bet -e "source /tmp/db.sql"
+    command: mysql -u root -pNaum-natali7 bet -e "source /tmp/db.sql"
   - name: insert values into bet
-    command: mysql -u root -pPool-swimming3 bet -e "INSERT INTO bookmaker (id,bookmaker_name) VALUES(1,'1xbet');"
+    command: mysql -u root -pNaum-natali7 bet -e "INSERT INTO bookmaker (id,bookmaker_name) VALUES(1,'1xbet');"
 - hosts: slave
   become: yes
   tasks:
@@ -97,9 +97,7 @@
       state: restarted
       enabled: yes
   - name: enable replication
-    command: mysql -u root -pPool-swimming3 -e "change master to master_host='master', master_auto_position=1, Master_User='repl', master_password='Pool-swimming3';"
-  - name: enable replication
-  #   command: mysql -u repl -pPool-swimming3 -h master -e "show master status\G"
-  # - name: enable replication
-    command: mysql -u root -pPool-swimming3 -e "start slave;"
+    command: mysql -u root -pNaum-natali7 -e "change master to master_host='master', master_auto_position=1, Master_User='repl', master_password='Naum-natali7';"
+  - name: enable replication 
+    command: mysql -u root -pNaum-natali7 -e "start slave;"
 ...

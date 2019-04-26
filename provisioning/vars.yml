@@ -1,6 +1,6 @@
-i---
-mysql_root_password: 'Pool-swimming3'
+---
+mysql_root_password: 'Naum-natali7'
 mysql_dbuser: user
-mysql_dbuser_password: 'Pool-swimming3'
+mysql_dbuser_password: 'Naum-natali7'
 mysql_log_file: '/var/log/mysqld.log'
 ...

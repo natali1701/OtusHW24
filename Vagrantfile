@@ -12,7 +12,7 @@ Vagrant.configure(2) do |config|
     ansible.sudo = "true"
   end
   config.vm.provider "virtualbox" do |v|
-          v.memory = 1024
+          v.memory = 2048
   end
   config.vm.define "master" do |master|
     master.vm.network "private_network", ip: "192.168.50.100", virtualbox__intnet: "private"

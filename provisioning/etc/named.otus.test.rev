@@ -13,4 +13,4 @@ $ORIGIN 50.168.192.in-addr.arpa.
 100               IN     PTR    ns.otus.test.
 ; Hosts
 100              IN      PTR    master.otus.test.
-101 IN PTR slave.otus.test.
+101              IN      PTR    slave.otus.test.
