@@ -3,10 +3,6 @@
 Vagrant.configure(2) do |config|
   config.vm.box = "centos/7"
   config.vm.provision "ansible" do |ansible|
-    # ansible.groups = {
-    #   "dns" => ["dns"],
-    #   "nodes" => ["node01","node02","node03"]
-    #   }
     ansible.verbose = "v"
     ansible.playbook = "provisioning/playbook.yml"
     ansible.sudo = "true"
