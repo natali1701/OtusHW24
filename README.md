@@ -59,11 +59,10 @@ mysql> SHOW VARIABLES LIKE 'gtid_mode';
 
 | Variable_name | Value |
 
-|---------------|-------|
+| ------------- | ----- |
 
 | gtid_mode     | ON    |
 
-+---------------+-------+
 
 1 row in set (0.01 sec)
 
@@ -75,7 +74,7 @@ mysql> SHOW DATABASES;
 
 | Database           |
 
-|--------------------|
+| ------------------ |
 
 | bet                |
 
@@ -105,7 +104,7 @@ Database changed
 
 | Tables_in_bet    |
 
-|------------------|
+| ---------------- |
 
 | bookmaker        |
 
@@ -130,7 +129,7 @@ Database changed
 
 | id | bookmaker_name |
 
-|---------------------|
+| -- | -------------- |
 
 |  1 | 1xbet          |
 
@@ -174,7 +173,7 @@ mysql> SHOW VARIABLES LIKE 'gtid_mode';
 
 | Variable_name | Value |
 
-|---------------|-------|
+| ------------- | ----- |
 
 | gtid_mode     | ON    |
 
@@ -188,7 +187,7 @@ mysql> SHOW DATABASES;
 
 | Database           |
 
-|--------------------|
+| ------------------ |
 
 | bet                |
 
@@ -216,7 +215,7 @@ Database changed
 
 | Tables_in_bet |
 
-|---------------|
+| ------------- |
 
 | bookmaker     |
 
@@ -236,7 +235,7 @@ Database changed
 
 | id | bookmaker_name |
 
-|----|----------------|
+| -- | -------------- |
 
 |  1 | 1xbet          |
 
