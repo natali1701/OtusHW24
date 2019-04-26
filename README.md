@@ -56,11 +56,10 @@ replicate-do-table=bet.**outcome**
 
 mysql> SHOW VARIABLES LIKE 'gtid_mode';
 
-+---------------+-------+
 
 | Variable_name | Value |
 
-+---------------+-------+
+|---------------|-------|
 
 | gtid_mode     | ON    |
 
@@ -73,11 +72,10 @@ mysql> SHOW VARIABLES LIKE 'gtid_mode';
 
 mysql> SHOW DATABASES;
 
-+--------------------+
 
 | Database           |
 
-+--------------------+
+|--------------------|
 
 | bet                |
 
@@ -89,7 +87,6 @@ mysql> SHOW DATABASES;
 
 | sys                |
 
-+--------------------+
 
 5 rows in set (0.01 sec)
 
@@ -105,11 +102,10 @@ Database changed
 
 **mysql> SHOW TABLES;**
 
-+------------------+
 
 | Tables_in_bet    |
 
-+------------------+
+|------------------|
 
 | bookmaker        |
 
@@ -125,18 +121,16 @@ Database changed
 
 | v_same_event     |
 
-+------------------+
 
 7 rows in set (0.01 sec)
 
 
 **mysql> SELECT * FROM bookmaker;**
 
-+----+----------------+
 
 | id | bookmaker_name |
 
-+----+----------------+
+|---------------------|
 
 |  1 | 1xbet          |
 
@@ -148,7 +142,6 @@ Database changed
 
 |  3 | unibet         |
 
-+----+----------------+
 
 5 rows in set (0.00 sec)
 
@@ -178,15 +171,13 @@ Copyright (c) 2000, 2019, Oracle and/or its affiliates. All rights reserved.
 
 mysql> SHOW VARIABLES LIKE 'gtid_mode';
 
-+---------------+-------+
 
 | Variable_name | Value |
 
-+---------------+-------+
+|---------------|-------|
 
 | gtid_mode     | ON    |
 
-+---------------+-------+
 
 1 row in set (0.02 sec)
 
@@ -194,11 +185,10 @@ mysql> SHOW VARIABLES LIKE 'gtid_mode';
 
 mysql> SHOW DATABASES;
 
-+--------------------+
 
 | Database           |
 
-+--------------------+
+|--------------------|
 
 | bet                |
 
@@ -210,7 +200,6 @@ mysql> SHOW DATABASES;
 
 | sys                |
 
-+--------------------+
 
 4 rows in set (0.00 sec)
 
@@ -224,11 +213,10 @@ Database changed
 
 **mysql> SHOW TABLES;**
 
-+---------------+
 
 | Tables_in_bet |
 
-+---------------+
+|---------------|
 
 | bookmaker     |
 
@@ -240,17 +228,15 @@ Database changed
 
 | outcome       |
 
-+---------------+
 
 5 rows in set (0.00 sec)
 
 **mysql> SELECT * FROM bookmaker;**
 
-+----+----------------+
 
 | id | bookmaker_name |
 
-+----+----------------+
+|----|----------------|
 
 |  1 | 1xbet          |
 
@@ -262,7 +248,6 @@ Database changed
 
 |  3 | unibet         |
 
-+----+----------------+
 
 5 rows in set (0.00 sec)
 
