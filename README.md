@@ -126,7 +126,7 @@ Database changed
 
 **2.SLAVE**
 
-После поднятия vagrant, проверим корректность выполнения задач, что были поставлены перед ansible:
+После поднятия vagrant проверим корректность выполнения задач, что были поставлены перед ansible:
 
 [vagrant@slave ~]$  cat /var/log/mysqld.log
 
@@ -146,6 +146,7 @@ Server version: 8.0.16 MySQL Community Server - GPL
 
 Copyright (c) 2000, 2019, Oracle and/or its affiliates. All rights reserved.
 
+
 mysql> SHOW VARIABLES LIKE 'gtid_mode';
 
 
@@ -155,7 +156,7 @@ mysql> SHOW VARIABLES LIKE 'gtid_mode';
 
 1 row in set (0.02 sec)
 
-Выведем список баз:
+**Выведем список баз:**
 
 mysql> SHOW DATABASES;
 
@@ -171,7 +172,9 @@ mysql> SHOW DATABASES;
 
 4 rows in set (0.00 sec)
 
+
 mysql> USE bet;
+
 
 Reading table information for completion of table and column names
 
