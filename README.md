@@ -71,17 +71,11 @@ mysql> SHOW DATABASES;
 
 
 | Database           |
-
 | ------------------ |
-
 | bet                |
-
 | information_schema |
-
 | mysql              |
-
 | performance_schema |
-
 | sys                |
 
 
@@ -101,21 +95,13 @@ Database changed
 
 
 | Tables_in_bet    |
-
 | ---------------- |
-
 | bookmaker        |
-
 | competition      |
-
 | events_on_demand |
-
 | market           |
-
 | odds             |
-
 | outcome          |
-
 | v_same_event     |
 
 
@@ -126,17 +112,11 @@ Database changed
 
 
 | id | bookmaker_name |
-
 | -- | -------------- |
-
 |  1 | 1xbet          |
-
 |  4 | betway         |
-
 |  5 | bwin           |
-
 |  6 | ladbrokes      |
-
 |  3 | unibet         |
 
 
@@ -170,11 +150,8 @@ mysql> SHOW VARIABLES LIKE 'gtid_mode';
 
 
 | Variable_name | Value |
-
 | ------------- | ----- |
-
 | gtid_mode     | ON    |
-
 
 1 row in set (0.02 sec)
 
@@ -184,17 +161,11 @@ mysql> SHOW DATABASES;
 
 
 | Database           |
-
 | ------------------ |
-
 | bet                |
-
 | information_schema |
-
 | mysql              |
-
 | performance_schema |
-
 | sys                |
 
 
@@ -212,19 +183,12 @@ Database changed
 
 
 | Tables_in_bet |
-
 | ------------- |
-
 | bookmaker     |
-
 | competition   |
-
 | market        |
-
 | odds          |
-
 | outcome       |
-
 
 5 rows in set (0.00 sec)
 
@@ -232,17 +196,11 @@ Database changed
 
 
 | id | bookmaker_name |
-
 | -- | -------------- |
-
 |  1 | 1xbet          |
-
 |  4 | betway         |
-
 |  5 | bwin           |
-
 |  6 | ladbrokes      |
-
 |  3 | unibet         |
 
 
