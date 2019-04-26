@@ -36,9 +36,14 @@
 - указываем таблицы  реплицирования на slave.
 
 replicate-do-db=**bet**
+
 replicate-do-table=bet.**bookmaker**
+
 replicate-do-table=bet.**competition**
+
 replicate-do-table=bet.**market**
+
 replicate-do-table=bet.**odds**
+
 replicate-do-table=bet.**outcome**
 
