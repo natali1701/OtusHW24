@@ -58,9 +58,7 @@ mysql> SHOW VARIABLES LIKE 'gtid_mode';
 
 
 | Variable_name | Value |
-
-| :------------ | :---- |
-
+| ------------- | :---- |
 | gtid_mode     | ON    |
 
 
