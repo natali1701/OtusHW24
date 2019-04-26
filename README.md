@@ -129,7 +129,6 @@ Database changed
 
 7 rows in set (0.01 sec)
 
-Репликация работает:
 
 **mysql> SELECT * FROM bookmaker;**
 
@@ -163,7 +162,7 @@ Database changed
 
 2019-04-26T15:08:14.754205Z 10 [System] [MY-010562] [Repl] **Slave** I/O thread for channel '': **connected to master 'repl@master:3306',replication started** in log 'FIRST' at position 4
 
-Репликация успешно выполнена.
+**Репликация успешно выполнена.**
 
 [root@slave ~]# mysql -u root -p
 
@@ -178,11 +177,17 @@ Server version: 8.0.16 MySQL Community Server - GPL
 Copyright (c) 2000, 2019, Oracle and/or its affiliates. All rights reserved.
 
 mysql> SHOW VARIABLES LIKE 'gtid_mode';
+
 +---------------+-------+
+
 | Variable_name | Value |
+
 +---------------+-------+
+
 | gtid_mode     | ON    |
+
 +---------------+-------+
+
 1 row in set (0.02 sec)
 
 Выведем список баз:
