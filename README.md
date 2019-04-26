@@ -28,3 +28,17 @@
 
 * пример в логе изменения строки и появления строки на реплике
 
+**Разверачиваем базу на мастере с помощью provisioning/playbook.yml**
+
+Вносим изменения в конфигурационный файл:
+- включаем GTID режим репликации, 
+- определяем уникальный server_id,
+- указываем таблицы  реплицирования на slave.
+
+replicate-do-db=**bet**
+replicate-do-table=bet.**bookmaker**
+replicate-do-table=bet.**competition**
+replicate-do-table=bet.**market**
+replicate-do-table=bet.**odds**
+replicate-do-table=bet.**outcome**
+
